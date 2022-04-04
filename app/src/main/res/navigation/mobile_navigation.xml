@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/statusFragment">
+    <fragment
+        android:id="@+id/operationalFragment"
+        android:name="com.ilhmdhn.frontoffice.OperationalFragment"
+        android:label="fragment_operational"
+        tools:layout="@layout/fragment_operational" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.ilhmdhn.frontoffice.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/fnbFragment"
+        android:name="com.ilhmdhn.frontoffice.FnbFragment"
+        android:label="fragment_fnb"
+        tools:layout="@layout/fragment_fnb" />
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.ilhmdhn.frontoffice.StatusFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.ilhmdhn.frontoffice.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>

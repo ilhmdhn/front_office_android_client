@@ -9,7 +9,7 @@ import retrofit2.http.Query
 interface ApiService {
     @GET("/login")
     suspend fun getLogin(
-        @Query("user_id") userId: String = "AIN",
-        @Query("user_password") userPassword: String = "AI1"
+        @Query("user_id") userId: String,
+        @Query("user_password") userPassword: String
     ):LoginResponse
 }

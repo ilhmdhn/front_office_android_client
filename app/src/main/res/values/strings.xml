@@ -6,4 +6,9 @@
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="setting">Konfigurasi</string>
+    <string name="operational">Operasional</string>
+    <string name="status">Status</string>
+    <string name="history">Riwayat</string>
+    <string name="fnb"><![CDATA[F&B]]></string>
+    <string name="profile">Profile</string>
 </resources>

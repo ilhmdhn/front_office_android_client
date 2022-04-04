@@ -17,19 +17,5 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        getLogin("AIN", "AI1")
-
-    }
-
-    fun getLogin(userId: String, userPassword: String) {
-        loginViewModel.getLogin(userId, userPassword).observe(this, {dataUser ->
-            if (dataUser != null){
-                when(dataUser){
-                    is Resource.Loading -> Toast.makeText(this, "loading", Toast.LENGTH_SHORT).show()
-                    is Resource.Success -> Toast.makeText(this, "Success " + dataUser.data.toString(), Toast.LENGTH_SHORT).show()
-                    is Resource.Error -> Toast.makeText(this, "Error "+dataUser.message, Toast.LENGTH_SHORT).show()
-                }
-            }
-        })
     }
 }
