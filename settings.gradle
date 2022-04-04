@@ -9,11 +9,10 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        jcenter()
         google()
         mavenCentral()
+        jcenter()
     }
 }
-
 rootProject.name = "Front Office"
 include ':app'
